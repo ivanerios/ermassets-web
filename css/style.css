@@ -1,0 +1,133 @@
+
+/* BASIC RESET */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+
+/* HTML ELEMENTS */
+body {  background-position: center; background-repeat: repeat; background-image:url("../images/bg.png");  font: 62.5% News Gothic,'Geneva',sans-serif; letter-spacing:1; }
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+img {
+    border:none;
+}
+
+@font-face {
+    font-family: 'newsgoth_cn_btregular';
+    src: url('news_gothic_condensed_bt-webfont.eot');
+    src: url('news_gothic_condensed_bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('news_gothic_condensed_bt-webfont.woff') format('woff'),
+         url('news_gothic_condensed_bt-webfont.ttf') format('truetype'),
+         url('news_gothic_condensed_bt-webfont.svg#newsgoth_cn_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h12 {
+				font-family: 'newsgoth_cn_btregular';
+							}
+
+/* HEADER 2 */
+#header2 { width:100%; height:120px; position:fixed; top:0px;}
+
+/* HEADER */
+#header { height:416px;}
+.headerimg { background-position: center; background-repeat: no-repeat; width:100%; height:300px; position:absolute; top:123px;}
+
+/* NAVIGATION */
+#nav-outer { background-position: center; background-repeat: no-repeat; height:151px; padding-top:0px; position:relative; top:0px; background-image:url("../images/front_banner.png"); }
+#navigation { height:30px; width:910px; margin:0 auto;}
+
+/* desplegable */
+
+#contenido {width: 630px; position:absolute; top:0px; left: 50%; margin-left:-107px; color:#FFF;}
+.menu li {list-style-type: none; float: left; font-family: 'newsgoth_cn_btregular'; font-size: 16px; line-height: 20px; padding-right: 8px;}
+.menu {width: 100%; height: 20px; background: none;}
+.menu li a {text-decoration: none; color: #fff; display: block; position: relative;}
+.menu li a:hover {color: #9F6;}
+.menu ul li ul span {background-image: url("images/flecha.png"); margin: 20px 50px; width: 20px; height: 10px; position: absolute;}
+.menu ul li ul {display: none; background-image:url("../images/textbg.png") ; padding: 10px 0; position: absolute; margin: -13px 0px; .margin: 69px -170px; _margin: 69px -170px;}
+.menu ul li:hover ul {display: block;}
+.menu ul li ul li {display: block; float: none; position: relative; color: #fff; padding: 0 20px; line-height: 15px;}
+.menu ul li ul li a{color: #fff;}
+.menu ul li ul li a:hover {color: #9F6}
+
+#menu_i {float: left; width: 54px; height: 100px; background: transparent url('img/bgmenu_i.png') no-repeat; margin-left: -16px;}
+
+#menu_d{float: right;width: 54px;height: 100px; background: transparent url('img/bgmenu_d.png') no-repeat; margin-right: -16px;}
+.menu li a:hover {color: #9F6;}li a:hover {color: #9F6;}
+
+/* HEADER TEXT */
+#headertxt { width:333px; margin:0 auto; clear:both; position:relative; top:278px; left:50%; margin-left:168px; text-align:center;}
+#firstline {color:#FFF; font-size:16px;}
+#secondline { color: #CCC; font-size:16px; clear:both;}
+#secondline:hover { text-decoration:none; color: #9F6; }
+
+.pictured { color:#FFF; font-size:28px; text-transform:uppercase; clear:both; margin-top:-1px; }
+.pictured a { font-size:28px; font-family:'newsgoth_cn_btregular'; letter-spacing:0; text-transform:none; color:#FFF; text-decoration:none; }
+.pictured a:hover { text-decoration:normal; }
+
+/* CONTROLS */
+.btn { height:32px; width:32px; float:left; cursor:pointer; }
+#back { background-image:url("../images/btn_back.png"); }
+#next { background-image:url("../images/btn_next.png"); }
+#control { background-image:url("../images/btn_pause.png"); }
+
+/* HEADER HAVIGATION */
+#headernav-outer { position:relative; top:383px; width:100px; left:50%; margin-left:60px;}
+#headernav { padding-left:0px; }
+
+#logo-outer { position:relative; top:0px; left:0px; width:100%; height:20px;}
+
+#senyal { position:relative; width:560px; top:-49px; left:369px; }
+
+/* CONTENT */
+#content { color:#575757; background-color:#fff;}
+#wrapper { position:relative; left:50%; margin-left:-502px; top:7px; width:670px; text-align: justify;}
+#wrapper2 { position:absolute; left:50%; margin-left:-499px; top:195px; width:670px; text-align: justify;}
+.link {color: #063;}
+.link:hover {color: #9F6;}
+#left_column {float:left; width:334px; height:950px; padding-left:1px;}
+#right_column {float:right; width:335px; height:950px;}
+#footer { color:#575757; background-color:#fd7c00; height:7px;}
+#bottom {position:fixed; width:100%; bottom:0px; background-position: center; background-repeat: no-repeat; height:35px; background-image:url("../images/bottom.png");}
+#texte {position: fixed; width:400px; bottom:3px; text-align:right; left:50%; margin-left:-240px; font-family:'newsgoth_cn_btregular'; font-size:12px; color: #999;}
+#bottom a {color: #999;}
+
+#patro {position:absolute; width:316px; height:30px; left:50%; margin-left:170px; top:423px; padding-left:15px; padding-top:8px; background-color:#3e4a37; border-bottom:1px #333; font-family: 'newsgoth_cn_btregular'; font-size:18px; color: #9F3;}
+
+#patroci {position:absolute; width:316px; height:30px; left:50%; margin-left:170px; top:123px; padding-left:15px; padding-top:30px; background-color:#3e4a37; border-bottom:1px #333; font-family: 'newsgoth_cn_btregular'; font-size:18px; color: #9F3;}
+
+#p_images {position:absolute; width:245px; left:50%; margin-left:205px; top:480px;}
+#p_images2 {position:absolute; width:335px; left:50%; margin-left:165px; top:190px;}
+
+#titulo {position:absolute; width:656px; height:30px; left:50%; margin-left:-501px; top:123px; padding-left:15px; padding-top:30px; background-color:#90c275; border-bottom:1px #333; font-family: 'newsgoth_cn_btregular'; font-size:18px; color: #FFF;}
+
+#acces a {color: #063; text-decoration:none;}
+
+#acces a:hover {color: #f5a73e;}
+
+#gal_f a {color: #FFF; text-decoration:none;}
+
+#gal_f a:hover {color: #f5a73e;}
+
+#title a {color: #063; text-decoration:none;}
+
+#title a:hover {color: #9F6;}
+
+#home {position:absolute; top:5px; left:50%; margin-left:-505px;}
+
+#nom, #titol, #email, #observacions {background:#CCC; margin-left:15px; width:615px; border:0px; padding:10px;}
+
+#nom, #titol, #email {height:10px;}
+
+#seccio {background:#CCC; margin-left:15px; width:300px; border:0px; padding:10px; height:30px;}
+
+label {font-family: 'newsgoth_cn_btregular'; color:#063; font-size:18px; margin-left:15px;}
+
+.boton{ font-size:18px; font-family: 'newsgoth_cn_btregular'; font-weight:bold; color:white; background:#063; border:0px; width:95px; height:35px;}
+
+#facebook {background-image:url(../images/facebook.jpg);}
+
+#facebook:hover {background-image:url(../images/facebook_a.jpg);}
