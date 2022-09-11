@@ -1,106 +1,133 @@
-<div id="bottom">
-<div id="texte">&copy; 2013 &middot; Ermassets Club de Muntanya d'Esporles</br>Dissenyat per <a href="http://www.ivanriosdisseny.com" target="_blank">ivanriosdisseny.com</a></div></div>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+<body>
+  <div id="bottom">
+    <div id="texte">&copy; 2013 &middot; Ermassets Club de Muntanya d'Esporles</br>Dissenyat per <a
+        href="http://www.ivanriosdisseny.com" target="_blank">ivanriosdisseny.com</a></div>
+  </div>
 
 
 
-<div id="header2">
+  <div id="header2">
 
-	<div id="nav-outer">
-     <div id="logo-outer"></a>
+    <div id="nav-outer">
+      <div id="logo-outer"></a>
+      </div>
     </div>
-	</div>
 
-<div id="menuf"></div>
-    
+    <div id="menuf"></div>
+
     <div id="contenido">
-    
-	<div class="menu">
-	<div id="menu_i"></div>
-	<ul>
-		<ul>
-					<li><a href="#"><img src="menu/club.png"></a><ul><span></span>
-                    <li><img src="images/espai.png"></li>
-			<li><a href="historia.php">Hist&ograve;ria</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="organitzacio.php">Organitzaci&oacute;</a></li><li><img src="images/espai.png"></li>		
-            <li><a href="soci.php">Fes-te Soci</a></li><li><img src="images/espai.png"></li>
-</ul>
-                    
-</li>
-<ul><li></li></ul>
-					<li><a href="#"><img src="menu/seccions.png"></a>
-					  <ul><span></span>
-			<li><img src="images/espai.png"></li>
-			<li><a href="BTT.php">BTT</a></li>
-            <li><img src="images/espai.png"></li>
-			<li><a href="escalada.php">Escalada</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="curses.php">Curses</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="barranc.php">Barranquisme</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="excur.php">Excursionisme</a></li>
-            <li><img src="images/espai.png"></li>
-</ul></li>
-<ul><li></li></ul>
-					<li><a href="calendari.php"><img src="menu/calendari.png"></a>
-					  <ul><span></span>
-</ul></li>
-<ul><li></li></ul>
-					<li><a href="#"><img src="menu/blocs.png"></a><ul><span></span>
-                    			<li><img src="images/espai.png"></li>
-			<li><a href="http://ermassets.blogspot.com/" target="_blank">BTT</a></li>
-            <li><img src="images/espai.png"></li>
-			<li><a href="http://ermassetsescalada.blogspot.com/" target="_blank">Escalada</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="http://ermassetsexcursionisme.blogspot.com/" target="_blank">Excursions</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="http://ermassetscurses.blogspot.com/" target="_blank">Curses</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="http://ermassetsesqui.blogspot.com/" target="_blank">Esqu&iacute;</a></li>
-            <li><img src="images/espai.png"></li>
-            <li><a href="http://barranquismeermassets.blogspot.com.es/" target="_blank">Barranquisme</a></li>
-            <li><img src="images/espai.png"></li>
-</ul></li>
-<ul><li></li></ul>
-            <li><a href="galeria.php"><img src="menu/galeria.png"></a><ul><span></span>
-</ul></li>
-<ul><li></li></ul>
-					<li><a href="contacte.php"><img src="menu/contacte.png"></a><ul><span></span>
-</ul></li>   
-                  <ul><li></li></ul>         
-<li><a href="enllacos.php"><img src="menu/enllacos.png"></a><ul><span></span>
-    
-</ul></li>
-<ul><li></li></ul>         
-<li><a href="#"><img src="menu/desca.png"></a><ul><span></span>
-<li><img src="images/espai.png"></li>
-<?php
-//ruta a la carpeta, '.' es carpeta actual
-$path="downloads";
-$no_mostrar=Array("","php");
-$dir_handle = @opendir($path) or die("No se pudo abrir $path");
-while ($file = readdir($dir_handle)) {
- $pos=strrpos($file,".");
- $extension=substr($file,$pos);
- if ($file=='.' or $file=='..'){ 
- echo "";}
- elseif (!in_array($extension, $no_mostrar)) {
- echo "<li><a href=\"downloads/$file\" id=\"enlace_$file\" title=\"$file\" target=\"_blank\">$file</a></li><li><img src=\"images/espai.png\"></li>";
- }
- 
-}
-closedir($dir_handle);
-?>
-    
-</ul></li>
-</ul>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="acces" style=" position:fixed; bottom:-1px; left:50%; margin-left:-490px; height:25px; width:200px; font-family:'newsgoth_cn_btregular'; font-size:17px; font-weight:900; color:#194407;"><a href="http://ermassets.graficmail.com/index.jsp" target="_blank">GESTI&Oacute; DE PERFILS</a></div>
-<div id="facebook" style=" position:fixed; bottom:5px; left:50%; margin-left:-350px; height:25px; width:117px;"><a class="facebook" href="http://www.facebook.com/groups/56376048062/?fref=ts" target="_blank"><img src="images/facebook_no.png"></a></div>
-<div id="home"><a href="index.php"><img src="images/home.png"></a></div>
+
+      <div class="menu">
+        <div id="menu_i"></div>
+        <ul>
+          <ul>
+            <li><a href="#"><img src="./club.png"></a>
+              <ul><span></span>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="historia.php">Hist&ograve;ria</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="organitzacio.php">Organitzaci&oacute;</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="soci.php">Fes-te Soci</a></li>
+                <li><img src="../images/espai.png"></li>
+              </ul>
+
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="#"><img src="./seccions.png"></a>
+              <ul><span></span>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="BTT.php">BTT</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="escalada.php">Escalada</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="curses.php">Curses</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="barranc.php">Barranquisme</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="excur.php">Excursionisme</a></li>
+                <li><img src="../images/espai.png"></li>
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="calendari.php"><img src="./calendari.png"></a>
+              <ul><span></span>
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="#"><img src="./blocs.png"></a>
+              <ul><span></span>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://ermassets.blogspot.com/" target="_blank">BTT</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://ermassetsescalada.blogspot.com/" target="_blank">Escalada</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://ermassetsexcursionisme.blogspot.com/" target="_blank">Excursions</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://ermassetscurses.blogspot.com/" target="_blank">Curses</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://ermassetsesqui.blogspot.com/" target="_blank">Esqu&iacute;</a></li>
+                <li><img src="../images/espai.png"></li>
+                <li><a href="http://barranquismeermassets.blogspot.com.es/" target="_blank">Barranquisme</a></li>
+                <li><img src="../images/espai.png"></li>
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="galeria.php"><img src="./galeria.png"></a>
+              <ul><span></span>
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="contacte.php"><img src="./contacte.png"></a>
+              <ul><span></span>
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="enllacos.php"><img src="./enllacos.png"></a>
+              <ul><span></span>
+
+              </ul>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li><a href="#"><img src="./desca.png"></a>
+              <ul><span></span>
+                <li><img src="../images/espai.png"></li>
+                <li><a href=\"downloads/$file\" id=\"enlace_$file\" title=\"$file\" target=\"_blank\">$file</a></li>
+                <li><img src="../images/espai.png"></li>
+
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="acces"
+    style=" position:fixed; bottom:-1px; left:50%; margin-left:-490px; height:25px; width:200px; font-family:'newsgoth_cn_btregular'; font-size:17px; font-weight:900; color:#194407;">
+    <a href="http://ermassets.graficmail.com/index.jsp" target="_blank">GESTI&Oacute; DE PERFILS</a>
+  </div>
+  <div id="facebook" style=" position:fixed; bottom:5px; left:50%; margin-left:-350px; height:25px; width:117px;"><a
+      class="facebook" href="http://www.facebook.com/groups/56376048062/?fref=ts" target="_blank"><img
+        src="./images/facebook_no.png"></a></div>
+  <div id="home"><a href="index.php"><img src="./images/home.png"></a></div>
+</body>
+
+</html>
